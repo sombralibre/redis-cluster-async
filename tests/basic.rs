@@ -13,7 +13,7 @@ use {
     tokio::runtime::Runtime,
 };
 
-use redis_cluster_async::{
+use redis_cluster_async_tls::{
     redis::{
         aio::{ConnectionLike, MultiplexedConnection},
         cmd, AsyncCommands, Cmd, IntoConnectionInfo, RedisError, RedisFuture, RedisResult, Script,
@@ -272,7 +272,7 @@ fn basic_failover() {
 
 struct FailoverEnv {
     env: RuntimeEnv,
-    connection: redis_cluster_async::Connection,
+    connection: redis_cluster_async_tls::Connection,
 }
 
 impl FailoverEnv {
