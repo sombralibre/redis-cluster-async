@@ -1,15 +1,15 @@
 [package]
-name = "redis_cluster_async"
-version = "0.7.1-alpha.0"
+name = "redis_cluster_async_tls"
+version = "0.7.2-alpha.0"
 authors = ["Markus Westerlind <marwes91@gmail.com>"]
 keywords = ["redis", "cluster", "database", "async"]
 description = "Async redis cluster driver for Rust."
-homepage = "https://github.com/Marwes/redis-cluster-async"
-repository = "https://github.com/Marwes/redis-cluster-async"
+homepage = "https://github.com/sombralibre/redis-cluster-async"
+repository = "https://github.com/sombralibre/redis-cluster-async"
 license = "MIT"
 readme = "README.md"
 
-edition = "2018"
+edition = "2021"
 
 [dependencies]
 crc16 = "0.4"
